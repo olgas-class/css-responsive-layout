@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 95%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.col {
+  border: 1px solid blue;
+  min-height: 300px;
+  margin-bottom: 1rem;
+}
+
+.main-section {
+  padding: 3rem 0;
+}
+
+@media screen and (min-width: 780px) {
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  #about .col {
+    width: calc(50% - 1rem);
+  }
+
+  #about .col:first-child {
+    width: 100%;
+  }
+
+  #team .col {
+    width: calc(100% / 3 - 4rem / 3);
+  }
+}
+
+/* HEADER */
+header {
+    height: 80px;
+    background-color: lightblue;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header nav {
+    display: none;
+}
+
+.header-menu {
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 780px) {
+    header nav {
+        display: block;
+    }
+
+    .hamburger-btn {
+        display: none;
+    }
+}
